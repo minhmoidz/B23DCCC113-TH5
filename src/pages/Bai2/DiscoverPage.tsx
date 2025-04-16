@@ -204,14 +204,21 @@ const DiscoverPage: React.FC = () => {
             {filteredDestinations.map(destination => (
               <Col xs={24} sm={12} md={8} lg={6} key={destination.id}>
                 <Card
-                  hoverable
-                  className="destination-card"
-                  cover={<img alt={destination.name} src={destination.imageUrl} style={{ height: 200, objectFit: 'cover' }} />}
-                  actions={[
-                    <Rate disabled defaultValue={destination.rating} />,
-                    <Tag color="blue">{formatPrice(destination.price)}</Tag>
-                  ]}
-                >
+                    hoverable
+                    className="destination-card"
+                    cover={
+                      <img 
+                        alt={destination.name} 
+                        src={destination.imageUrl} 
+                        style={{ height: 200, objectFit: 'cover' }}
+                        
+                      />
+                    }
+                    actions={[
+                      <Rate disabled defaultValue={destination.rating} />,
+                      <Tag color="blue">{formatPrice(destination.price)}</Tag>
+                    ]}
+                  >
                   <Meta
                     title={destination.name}
                     description={

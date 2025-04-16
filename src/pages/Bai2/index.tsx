@@ -1,13 +1,13 @@
-// src/App.tsx
+// App.tsx (bản đã chỉnh sáng + tối ưu UX)
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import { Layout, Menu, Button, Avatar, Dropdown, Typography } from 'antd';
 import {
   HomeOutlined, CompassOutlined, CalendarOutlined,
   WalletOutlined, UserOutlined, SettingOutlined,
   LogoutOutlined, MenuUnfoldOutlined, MenuFoldOutlined
 } from '@ant-design/icons';
-import DiscoverPage from "./DiscoverPage";
+import DiscoverPage from './DiscoverPage';
 import ItineraryPlanner from './ItineraryPlanner';
 import BudgetManager from './BudgetManager';
 import AdminPage from './AdminPage';
@@ -57,42 +57,45 @@ const App: React.FC = () => {
           breakpoint="lg"
           collapsedWidth={isMobile ? 0 : 80}
           className="app-sider"
+          theme="light"
         >
           <div className="logo">
-            {!collapsed && "Travel Planner"}
+            {!collapsed && <Title level={4} style={{ margin: '16px', color: '#1890ff' }}>Travel Planner</Title>}
           </div>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+          <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1" icon={<CompassOutlined />}>
-              <Link to="/">Khám phá</Link>
+              <NavLink to="/" exact activeClassName="active-link">Khám phá</NavLink>
             </Menu.Item>
             <Menu.Item key="2" icon={<CalendarOutlined />}>
-              <Link to="/itinerary">Lịch trình</Link>
+              <NavLink to="/itinerary" activeClassName="active-link">Lịch trình</NavLink>
             </Menu.Item>
             <Menu.Item key="3" icon={<WalletOutlined />}>
-              <Link to="/budget">Ngân sách</Link>
+              <NavLink to="/budget" activeClassName="active-link">Ngân sách</NavLink>
             </Menu.Item>
             <Menu.Item key="4" icon={<SettingOutlined />}>
-              <Link to="/admin">Quản trị</Link>
+              <NavLink to="/admin" activeClassName="active-link">Quản trị</NavLink>
             </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-header">
+          <Header className="site-header" style={{ background: '#fff', padding: '0 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Button
               type="text"
               icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
               onClick={() => setCollapsed(!collapsed)}
               className="trigger-button"
             />
-
+            <Dropdown overlay={userMenu} placement="bottomRight">
+              <Avatar icon={<UserOutlined />} />
+            </Dropdown>
           </Header>
-          <Content className="site-content">
+          <Content className="site-content" style={{ margin: '16px', background: '#fff', padding: '24px', borderRadius: '8px' }}>
             <Switch>
-            <Route path="/" exact component={DiscoverPage} />
-            <Route path="/itinerary" component={ItineraryPlanner} />
-            <Route path="/budget" component={BudgetManager} />
-            <Route path="/admin" component={AdminPage} />
-                      </Switch>
+              <Route path="/" exact component={DiscoverPage} />
+              <Route path="/itinerary" component={ItineraryPlanner} />
+              <Route path="/budget" component={BudgetManager} />
+              <Route path="/admin" component={AdminPage} />
+            </Switch>
           </Content>
         </Layout>
       </Layout>

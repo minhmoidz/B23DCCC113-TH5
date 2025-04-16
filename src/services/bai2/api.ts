@@ -13,7 +13,7 @@ const mockDestinations: DestinationType[] = [
     price: 500000,
     rating: 4.5,
     description: 'Một trong những bãi biển đẹp nhất Việt Nam',
-    imageUrl: 'https://source.unsplash.com/random/300x200?beach,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '2',
@@ -23,7 +23,7 @@ const mockDestinations: DestinationType[] = [
     price: 1200000,
     rating: 5,
     description: 'Di sản thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi',
-    imageUrl: 'https://source.unsplash.com/random/300x200?halong,bay'
+    imageUrl: 'https://images.unsplash.com/photo-1573551089778-46a7abc39d9f?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '3',
@@ -33,7 +33,7 @@ const mockDestinations: DestinationType[] = [
     price: 300000,
     rating: 4.8,
     description: 'Phố cổ xinh đẹp với đèn lồng và kiến trúc truyền thống',
-    imageUrl: 'https://source.unsplash.com/random/300x200?hoian,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ const mockDestinations: DestinationType[] = [
     price: 800000,
     rating: 4.7,
     description: 'Thành phố ngàn hoa với khí hậu mát mẻ quanh năm',
-    imageUrl: 'https://source.unsplash.com/random/300x200?dalat,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '5',
@@ -53,7 +53,7 @@ const mockDestinations: DestinationType[] = [
     price: 950000,
     rating: 4.6,
     description: 'Thị trấn trong mây với ruộng bậc thang tuyệt đẹp',
-    imageUrl: 'https://source.unsplash.com/random/300x200?sapa,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1577948000111-9c970dfe3743?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '6',
@@ -63,7 +63,7 @@ const mockDestinations: DestinationType[] = [
     price: 1500000,
     rating: 4.9,
     description: 'Đảo ngọc với bãi biển cát trắng và nước biển trong xanh',
-    imageUrl: 'https://source.unsplash.com/random/300x200?phuquoc,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1537956965359-7573183d1f57?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '7',
@@ -73,7 +73,7 @@ const mockDestinations: DestinationType[] = [
     price: 600000,
     rating: 4.4,
     description: 'Thủ đô nghìn năm văn hiến với nhiều di tích lịch sử',
-    imageUrl: 'https://source.unsplash.com/random/300x200?hanoi,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '8',
@@ -83,7 +83,7 @@ const mockDestinations: DestinationType[] = [
     price: 700000,
     rating: 4.3,
     description: 'Thành phố năng động và hiện đại nhất Việt Nam',
-    imageUrl: 'https://source.unsplash.com/random/300x200?saigon,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '9',
@@ -93,7 +93,7 @@ const mockDestinations: DestinationType[] = [
     price: 450000,
     rating: 4.5,
     description: 'Cố đô với hệ thống di tích cung đình đặc sắc',
-    imageUrl: 'https://source.unsplash.com/random/300x200?hue,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '10',
@@ -103,7 +103,7 @@ const mockDestinations: DestinationType[] = [
     price: 550000,
     rating: 4.2,
     description: 'Cao nguyên với đồi chè xanh mát và hoa mận trắng',
-    imageUrl: 'https://source.unsplash.com/random/300x200?mocchau,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '11',
@@ -113,7 +113,7 @@ const mockDestinations: DestinationType[] = [
     price: 850000,
     rating: 4.4,
     description: 'Thành phố biển nổi tiếng với nhiều khu nghỉ dưỡng cao cấp',
-    imageUrl: 'https://source.unsplash.com/random/300x200?nhatrang,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=400&q=80'
   },
   {
     id: '12',
@@ -123,7 +123,7 @@ const mockDestinations: DestinationType[] = [
     price: 750000,
     rating: 4.3,
     description: 'Thiên đường của những đồi cát và resort ven biển',
-    imageUrl: 'https://source.unsplash.com/random/300x200?muine,vietnam'
+    imageUrl: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80'
   }
 ];
 
